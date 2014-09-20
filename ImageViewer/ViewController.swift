@@ -9,10 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var imageView:UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    @IBAction func osaretayo(){
+        imageView.image = UIImage(named:"b.jpg")
     }
 
     override func didReceiveMemoryWarning() {
